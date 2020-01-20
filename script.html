@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function sayhello() {
+			var username=document.getElementById('text').value;
+			alert("hello"+username);
+			
+		}
+	</script>
+	<title></title>
+</head>
+<body>
+	<div style="width: 110px; height: 130px; border: solid; margin: auto;" class="calculator__keys">
+  <button style="border-radius: 50%" class="key--operator" data-action="add">+</button>
+  <button style="border-radius: 50%" class="key--operator" data-action="subtract">-</button>
+  <button style="border-radius: 50%" class="key--operator" data-action="multiply">&times;</button>
+  <button style="border-radius: 50%" class="key--operator" data-action="divide">÷</button>
+  <button style="border-radius: 50%">7</button>
+  <button style="border-radius:50% ">8</button>
+  <button style="border-radius: 50%">9</button>
+  <button style="border-radius: 50%">4</button>
+  <button style="border-radius: 50%">5</button>
+  <button style="border-radius: 50%">6</button>
+  <button style="border-radius: 50%">1</button>
+  <button style="border-radius: 50%">2</button>
+  <button style="border-radius: 50%">3</button>
+  <button style="border-radius: 50%">0</button>
+  <button style="border-radius: 50%" data-action="decimal">.</button>
+  <button style="border-radius: 50%" data-action="clear">AC</button>
+  <button style="border-radius: 50%" class="key--equal" data-action="calculate">=</button>
+</div>
+<form>
+	name<input type="text" id="text">
+	<input type="button" value="Hello" onclick="sayhello()">
+</form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<style>
+*{
+ margin:0px;
+ padding:0px;
+}
+.dropdown{
+ position:relative;
+ display:inline-block;
+}
+.button{
+ padding:10px 40px;
+ font-size:20px;
+}
+.drop-content{
+ display:none ;
+ position:absolute;
+ z-index:1;
+ width:120px;
+}
+.drop-content a{
+ display:block;
+ background:#dfdfdf;
+ padding:10px;
+ color:black;
+ text-decoration:none;
+ font-size:20px;
+ margin-top:2px;
+}
+.dropdown:hover .drop-content{
+ display:block;
+}
+</style>
+<body>
+	<div>
+		<img src="IMG/logo.png">
+	</div>
+	<div style="text-align: right;">
+		Students | Faculty & Staff <input type="text" name="Search">
+	</div>
+ <div class="dropdown">
+  <button class="button">Profile</button>
+  <!-- this menu will appear if we hover on the button -->
+  <div class="drop-content">
+   <a href="#">Vision and Mission</a>
+   <a href="#">Strategic Goals</a>
+   <a href="#">Governance</a>
+   <a href="#">Agreements</a>
+  </div>
+  <div class="dropdown">
+  <button class="button">Admission</button>
+  <!-- this menu will appear if we hover on the button -->
+  <div class="drop-content">
+   <a href="#">Vision and Mission</a>
+   <a href="#">Strategic Goals</a>
+   <a href="#">Governance</a>
+   <a href="#">Agreements</a>
+  </div>
+ </div>
+</body>
+</html>
